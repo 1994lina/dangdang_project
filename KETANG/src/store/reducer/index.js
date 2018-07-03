@@ -1,9 +1,7 @@
 import {combineReducers} from 'redux';
-import course from './course';
-import person from './person';
 
-let reducer = combineReducers({
-    course,
-    person
-});
+
+let reducer =function () {
+
+};
 export default reducer;

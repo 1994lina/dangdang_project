@@ -15,28 +15,12 @@ import zh_CN from 'antd/lib/locale-provider/zh_CN';
 import './static/css/reset.min.css';
 import './static/css/common.less';
 
-/*IMPORT COMPONENT*/
-import NavTop from './component/NavTop';
-import NavBottom from './component/NavBottom';
-
-
 /*RENDER*/
 render(<Provider store={store}>
     <HashRouter>
         <LocaleProvider locale={zh_CN}>
             <div>
-                {/*HEADER*/}
-                <NavTop/>
-
-                {/*MAIN=>ROUTE*/}
-                <main className='container'>
-                    <Switch>
-
-                    </Switch>
-                </main>
-
-                {/*FOOTER*/}
-                <NavBottom/>
+                                     
             </div>
         </LocaleProvider>
     </HashRouter>
