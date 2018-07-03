@@ -15,12 +15,27 @@ import zh_CN from 'antd/lib/locale-provider/zh_CN';
 import './static/css/reset.min.css';
 import './static/css/common.less';
 
+
+import NavBottom from './component/NavBottom'
+import Home from "./routes/Home";
+import Classify from "./routes/Classify";
+import Shopping from "./routes/Shopping";
+import Mydangdang from "./routes/Mydangdang";
+
+
 /*RENDER*/
 render(<Provider store={store}>
     <HashRouter>
         <LocaleProvider locale={zh_CN}>
             <div>
-                                     
+                <Switch>
+                    <Route path='/home' component={Home}/>
+                    <Route path='/classify' component={Classify}/>
+                    <Route path='/shopping' component={Shopping}/>
+                    <Route path='/mydangdang' component={Mydangdang}/>
+                    <Redirect to='/home'/>
+                </Switch>
+                <NavBottom/>
             </div>
         </LocaleProvider>
     </HashRouter>
