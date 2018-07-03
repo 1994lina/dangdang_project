@@ -13,8 +13,7 @@ class Home extends Component {
         }
     }
     render() {
-        return (
-            <div>
+        return <div>
                 <header className='headerNavBox'>
                     <div className='homeBox'>
                         <div className='baseBox'>
