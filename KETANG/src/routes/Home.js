@@ -1,8 +1,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Carousel } from 'antd';
-import {Icon,Input} from 'antd';
+import {Icon,Input,Carousel} from 'antd';
 import '../static/css/home.less'
 class Home extends Component {
     constructor(props, context) {
