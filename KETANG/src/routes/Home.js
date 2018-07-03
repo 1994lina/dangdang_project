@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import NavTop from '../component/NavTop'
@@ -22,8 +23,32 @@ class Home extends Component {
                         <div><img src="http://img60.ddimg.cn/upload_img/00609/mao/b0628banner1242366-1530524637.jpg" alt=""/></div>
                     </Carousel>
                 </main>
+=======
+import React,{Component} from 'react';
+import {connect} from 'react-redux'
+import {Icon,Input} from 'antd';
+import '../static/css/home.less'
+
+class Home extends Component{
+    constructor(props,context){
+        super(props,context);
+    }
+    render(){
+        return <div>
+                <header className='headerNavBox'>
+                    <div className='homeBox'>
+                        <div className='baseBox'>
+                            <h1 className='logo'>当当</h1>
+                            <div>
+                                <Input  placeholder="百丽童鞋" prefix={<Icon type='search'/>}  className='inputBox' />
+                            </div>
+                            <Icon className='icon' type='menu-fold'/>
+                        </div>
+                    </div>
+                </header>
+                <main className='allBox'>home</main>
+>>>>>>> cd78e60032fb3d9677f76791458382af130e8fbd
             </div>
-        )
     }
 }
 export default connect()(Home)
