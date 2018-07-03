@@ -7,9 +7,6 @@ import action from '../store/action/index';
 class NavTop extends React.Component {
     constructor(props, context) {
         super(props, context);
-        this.state={
-            otherPage:1
-        }
     }
     render() {
         return <header className='headerNavBox'>
@@ -17,10 +14,7 @@ class NavTop extends React.Component {
                 <div className='baseBox'>
                     <h1 className='logo'>当当</h1>
                     <div>{this.props.title}</div>
-                    {
-                        this.props.isList?this.props.font:
-                            <Icon className='icon' type='menu-fold'/>
-                    }
+                    <Icon className='icon' type='menu-fold'/>
                 </div>
             </div>
         </header>;
