@@ -3,14 +3,16 @@ import {connect} from 'react-redux'
 import NavTop from '../component/NavTop'
 import {withRouter, NavLink} from 'react-router-dom';
 import {Icon} from 'antd';
-
+import Mydd_child  from "../routes/Mydd_child";
 import "../static/css/mydangdang.less"
 let img = require("../static/images/user.png");
 class Mydangdang extends Component{
     constructor(props,context){
         super(props,context);
         this.state={
-            title:'我的当当'
+            title:'我的当当',
+            img1:"http://img61.ddimg.cn/upload_img/00528/000/vip-1521514865.png",
+            name1:"会员中心"
         }
     }
     render(){
@@ -18,7 +20,7 @@ class Mydangdang extends Component{
             <div>
                 <NavTop title={this.state.title}/>
                  <main className='allBox'>
-                    <div >
+                    <div>
                         <div className="heard"></div>
                         {/*<div>*/}
                             {/*<img src={img} alt=""/>*/}
@@ -50,7 +52,9 @@ class Mydangdang extends Component{
                                     <img src="http://img63.ddimg.cn/upload_img/00487/11111/wd-012-1.png" alt=""/>
                                 </div>
                                 我的订单
+
                                     <span>查看全部购买商品</span>
+
                                 </a>
                             </div>
 
@@ -68,9 +72,24 @@ class Mydangdang extends Component{
                                         <Icon type="shopping-cart" />
                                         <span>退换货</span>
                                     </NavLink>
-
                                 </div>
                             </nav>
+
+
+                            <div className="bg">
+                                <div className="indent_1">
+
+                                <a href="">
+                                    <div className="indent_img">
+                                        <img src="http://img61.ddimg.cn/upload_img/00528/000/vip-1521514865.png" alt=""/>
+                                    </div>
+                                    会员中心
+                                    <Icon type="right" />
+
+                                </a>
+                            </div></div>
+                            <Mydd_child> </Mydd_child>
+
                         </div>
                     </div>
                 </main>
