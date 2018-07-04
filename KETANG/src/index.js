@@ -18,10 +18,9 @@ import './static/css/common.less';
 
 import NavBottom from './component/NavBottom'
 import Home from "./routes/Home";
-import Classify from "./routes/Classify";
 import Shopping from "./routes/Shopping";
 import Mydangdang from "./routes/Mydangdang";
-
+import Classify from "./routes/Classify"
 
 /*RENDER*/
 render(<Provider store={store}>
