@@ -3,8 +3,6 @@ import {connect} from 'react-redux'
 import NavTop from '../component/NavTop'
 import {Checkbox, Icon,List, Avatar, Button, Spin} from 'antd'
 import '../static/css/shopping.less'
-
-
 let img=require('../static/images/dangdang.png');
 let img1=require('../static/images/img.jpg');
 /*<img src={img} alt="" className='shopIcon'/>*/

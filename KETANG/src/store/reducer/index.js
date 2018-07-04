@@ -1,7 +1,8 @@
 import {combineReducers} from 'redux';
+import Home  from './Home'
 
 
-let reducer =function () {
-
-};
+let reducer =combineReducers ( {
+    Home
+});
 export default reducer;

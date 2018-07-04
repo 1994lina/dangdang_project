@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b49471-82ea-4620-95a9-5b82f56bc367" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KETANG/src/api/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KETANG/src/store/action/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KETANG/src/store/reducer/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KETANG/src/routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/routes/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KETANG/src/routes/Shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/routes/Shopping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/static/css/classify.less" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/static/css/classify.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KETANG/src/static/css/home.less" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/static/css/home.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KETANG/src/store/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/store/action-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KETANG/src/store/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/store/action/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KETANG/src/store/reducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/store/reducer/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KETANG-SERVER/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-454">
               <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shopping.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/KETANG/src/routes/Shopping.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,8 +118,8 @@
         <option value="$PROJECT_DIR$/KETANG/src/routes/Classify.js" />
         <option value="$PROJECT_DIR$/KETANG/src/static/css/common.less" />
         <option value="$PROJECT_DIR$/KETANG/package.json" />
-        <option value="$PROJECT_DIR$/KETANG/src/routes/Shopping.js" />
         <option value="$PROJECT_DIR$/KETANG/src/static/css/classify.less" />
+        <option value="$PROJECT_DIR$/KETANG/src/routes/Shopping.js" />
       </list>
     </option>
   </component>
@@ -1859,12 +1875,12 @@
       <option name="presentableId" value="Default" />
       <updated>1530595937844</updated>
       <workItem from="1530595939246" duration="4090000" />
-      <workItem from="1530625595396" duration="9778000" />
+      <workItem from="1530625595396" duration="9870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13868000" />
+    <option name="totallyTimeSpent" value="13960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -2032,16 +2048,6 @@
     <entry file="file://$PROJECT_DIR$/yarn-error.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/KETANG/src/routes/Shopping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KETANG/src/routes/Classify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -2155,6 +2161,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-454">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KETANG/src/routes/Shopping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
