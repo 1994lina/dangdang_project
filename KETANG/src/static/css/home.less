@@ -1,3 +1,7 @@
+html,body{
+    margin-bottom: 1rem; 
+}
+
 .headerNavBox {
     @BG: #2A2A2A;
     position: fixed;
@@ -51,6 +55,14 @@
             width: 100%;
             height: 100%;
         }
+    }
+}
+
+.imgDiv{
+    img{
+        display: block;
+        width: 100%;
+        height: 3rem;
     }
 }
 
@@ -130,7 +142,7 @@
         height: .2rem;
         width: 100%;
         line-height: 0;
-        background: rgb(239,244,250,1);
+        background: rgb(239, 244, 250, 1);
     }
 }
 
@@ -142,4 +154,49 @@
 .ant-carousel-vertical {
     width: 6.5rem;
     margin: 0;
+}
+
+.brand_street {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    .title {
+        margin-top: .3rem;
+        img {
+            width: 100%;
+        }
+    }
+    .brand_list {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        .ul_wrap {
+            width: 100%;
+            transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+            transition-duration: 0ms;
+            left: -828px;
+            top: 0px;
+            li {
+                display: block;
+                float: left;
+                box-sizing: border-box;
+                dd {
+                    width: 20%;
+                    float: left;
+                    box-sizing: border-box;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        img {
+                            vertical-align: middle;
+                            border: 0 none;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

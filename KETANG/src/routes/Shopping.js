@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import NavTop from '../component/NavTop'
 import {Checkbox, Icon,List, Avatar, Button, Spin} from 'antd'
 import '../static/css/shopping.less'
-import reqwest from 'reqwest';
+
 
 
 let img=require('../static/images/dangdang.png');

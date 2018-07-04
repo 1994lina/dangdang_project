@@ -13,15 +13,19 @@ class Home extends Component {
     }
 
     async componentDidMount() {
-        let { queryBanner, bannerData } = this.props;
+        let { queryBanner, bannerData,queryBanner3, bannerData3, } = this.props;
 
         if (!bannerData || bannerData.length === 0) {
             queryBanner();
         }
+
+        if (!bannerData3 || bannerData3.length === 0) {
+            queryBanner3();
+        }
     }
 
     render() {
-        let { bannerData } = this.props;
+        let { bannerData,bannerData3 } = this.props;
 
         return <div>
             <header className='headerNavBox'>
@@ -43,6 +47,11 @@ class Home extends Component {
                     <div><img src="http://img60.ddimg.cn/upload_img/00609/mao/b0628banner1242366-1530524637.jpg" alt="" /></div>
                     <div><img src="http://img63.ddimg.cn/upload_img/00702/J/1242x366_lyx_0702-1530516279.jpg" alt="" /></div>
                 </Carousel>
+
+                <div className="imgDiv">
+                    <img src="http://img63.ddimg.cn/upload_img/00626/sxt03/icon-1530603026.jpg" alt=""/>
+                </div>
+
                 <div className="ify">
                     <ul>
                         <li><a href="javascript:;"><img src="http://img62.ddimg.cn/upload_img/00528/0000/1-00-1528978871.png" alt="" /></a></li>
@@ -72,12 +81,35 @@ class Home extends Component {
                 </div>
 
 
-                <div>
-                    <div><img src="http://img61.ddimg.cn/upload_img/00528/000000/biaoti-101-1523330132.jpg" alt="品牌街"/></div>
-                    <div>   
-                        
+                <div className="brand_street">
+                    <div className="title">
+                        <img src="http://img61.ddimg.cn/upload_img/00528/000000/biaoti-101-1523330132.jpg" alt="品牌街"/>
+                    </div>
+                    <div className="brand_list">   
+                        <ul className="ul_wrap">
+                            {bannerData3 && bannerData3.length !== 0 ? ( <Carousel autoplay>
+                            {bannerData3.map((item, index) => {
+                               
+                                return <li key={index}>
+                                    {
+                                        item.map((itte,index)=>{
+                                            return <dl key={index}>
+                                                <dd>
+                                                <a href="javascript:;"><img src={itte.pic} alt=""/></a>
+                                                </dd>
+                                            </dl>
+                                        })
+                                    }
+                                </li>;
+                            })}
+                        </Carousel>) : ''}
+                        </ul>
                     </div>
                 </div>
+
+
+                <div></div>            
+            
             </main>
         </div>
 
