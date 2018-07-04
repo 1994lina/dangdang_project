@@ -1,6 +1,10 @@
 const CONFIG = require('./config'),
     PERSONAL_PATH = './json/personal.json',
     COURSE_PATH = './json/course.json',
+    BANNER1_PATH = './json/banner1.json',
+    BANNER2_PATH = './json/banner2.json',
+    BANNER3_PATH = './json/banner3.json',
+    LISTNAME_PATH = './json/listname.json',
     STORE_PATH = './json/store.json';
 
 /*-CREATE SERVER-*/
@@ -35,6 +39,10 @@ const {readFile} = require('./utils/promiseFS');
 app.use(async (req, res, next) => {
     req.personalDATA = JSON.parse(await readFile(PERSONAL_PATH));
     req.courseDATA = JSON.parse(await readFile(COURSE_PATH));
+    req.banner1DATA = JSON.parse(await readFile(BANNER1_PATH));
+    req.banner2DATA = JSON.parse(await readFile(BANNER2_PATH));
+    req.banner3DATA = JSON.parse(await readFile(BANNER3_PATH));
+    req.listnameDATA = JSON.parse(await readFile(LISTNAME_PATH ));
     req.storeDATA = JSON.parse(await readFile(STORE_PATH));
     next();
 });

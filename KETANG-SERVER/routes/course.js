@@ -10,7 +10,38 @@ route.get('/banner', (req, res) => {
         data
     });
 });
-
+route.get('/banner1', (req, res) => {
+    //=>我就是把所有课程中的最后三条数据做为轮播图展示
+    res.send({
+        code: 0,
+        msg: 'OK!',
+        data: req.banner1DATA
+    });
+});
+route.get('/banner2', (req, res) => {
+    //=>我就是把所有课程中的最后三条数据做为轮播图展示
+    res.send({
+        code: 0,
+        msg: 'OK!',
+        data: req.banner2DATA
+    });
+});
+route.get('/banner3', (req, res) => {
+    //=>我就是把所有课程中的最后三条数据做为轮播图展示
+    res.send({
+        code: 0,
+        msg: 'OK!',
+        data: req.banner3DATA
+    });
+});
+route.get('/listname', (req, res) => {
+    //=>我就是把所有课程中的最后三条数据做为轮播图展示
+    res.send({
+        code: 0,
+        msg: 'OK!',
+        data: req.listnameDATA
+    });
+});
 route.get('/info', (req, res) => {
     //=>客户端会传一个课程ID进来，我们在所有课程中找到和ID相同的信息，返回
     let {courseID} = req.query;//=>GET请求问号传递信息都在REQ.QUERY上呢
