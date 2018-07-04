@@ -1,60 +1,145 @@
 .headerNavBox {
-   @BG: #2A2A2A;
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 9999;
-   width: 100%;
-   height: 0.8rem;
-   line-height: 0.8rem;
-   background: #fff;
-   color: #FFF;
-   .homeBox {
-     height: 100%;
-     .baseBox{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       align-items: center;
-       padding: 0 .2rem;
-       height: 100%;
-       font-size: .4rem;
-       .logo {
-         width:.6rem;
-         height: .5rem;
-         font-size: 0;
-         background: url("../images/logo.png") no-repeat;
-         background-size: 100% 100%;
-       }
-       div{
-         color: #2A2A2A;
-       }
-       .icon {
-         color: #2A2A2A;
-       }
-       .inputBox{
-         background: #e8ecf0 !important;
-         width: 5.2rem;
-         border-radius: .3rem;
-       }
-     }
-   }
- }
-
-
- .allBox{
-  width: 100%;
-
-
-  .ant-carousel .slick-slide {
-    margin-top: 10px;
-    text-align: center;
-    overflow: hidden;
-
-    img{
-      width: 100%;
-      height: 100%;
+    @BG: #2A2A2A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #fff;
+    color: #FFF;
+    .homeBox {
+        height: 100%;
+        .baseBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 .2rem;
+            height: 100%;
+            font-size: .4rem;
+            .logo {
+                width: .6rem;
+                height: .5rem;
+                font-size: 0;
+                background: url("../images/logo.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            div {
+                color: #2A2A2A;
+            }
+            .icon {
+                color: #2A2A2A;
+            }
+            .inputBox {
+                background: #e8ecf0 !important;
+                width: 5.2rem;
+                border-radius: .3rem;
+            }
+        }
     }
-  }
-  
- }
+}
+
+.allBox {
+    width: 100%;
+    .ant-carousel .slick-slide {
+        margin-top: 10px;
+        text-align: center;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.ify {
+    ul {
+        display: block;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #eff4fa;
+        margin-bottom: 0;
+        li {
+            display: block;
+            float: left;
+            width: 20%;
+            a {
+                display: block;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.journalism {
+    background-color: #ffffff;
+    height: 0.8rem;
+    position: relative;
+    .ddkx_icon {
+        float: left;
+        margin-left: .3rem;
+        img {
+            width: 1.6rem;
+            height: 100%;
+        }
+    }
+    .ant-carousel .slick-slide {
+        float: left;
+        margin-top: 0;
+        height: 0.8rem;
+        overflow: hidden;
+        div {
+            display: inline-block;
+            a {
+                .ddkx_title_label_wrap {
+                    float: left;
+                    margin-left: .12rem;
+                    border: 1px solid #f23d0a;
+                    height: .4rem;
+                    padding: 0 .07rem;
+                    border-radius: .0833rem;
+                    -webkit-border-radius: .0833rem;
+                    -moz-border-radius: .0833rem;
+                    margin-right: .1667rem;
+                    color: #f23d0a;
+                }
+                .ddkx_text {
+                    color: #3c3c3c;
+                }
+            }
+        }
+    }
+    .ddkx_more {
+        position: absolute;
+        top: .16rem;
+        right: .3rem;
+        color: #999999;
+    }
+    .style503 {
+        display: block;
+        font-size: 0;
+        height: .2rem;
+        width: 100%;
+        line-height: 0;
+        background: rgb(239,244,250,1);
+    }
+}
+
+.journalism .ant-carousel .slick-slide {
+    display: flex;
+    align-items: center
+}
+
+.ant-carousel-vertical {
+    width: 6.5rem;
+    margin: 0;
+}
