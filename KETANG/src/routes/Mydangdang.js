@@ -5,7 +5,10 @@ import {withRouter, NavLink} from 'react-router-dom';
 import {Icon} from 'antd';
 import Mydd_child  from "../routes/Mydd_child";
 import "../static/css/mydangdang.less"
+
+import {route} from "react-router-dom";
 let img = require("../static/images/user.png");
+
 class Mydangdang extends Component{
     constructor(props,context){
         super(props,context);
@@ -38,7 +41,7 @@ class Mydangdang extends Component{
                                     <span>关注的店铺</span>
                                 </div>
                             </NavLink>
-                            <NavLink to='/shopping'>
+                            <NavLink to='/login'>
                                 <div>
                                     <p>0</p>
                                     <span>我的足迹</span>
@@ -89,7 +92,85 @@ class Mydangdang extends Component{
                                 </a>
                             </div></div>
                             <Mydd_child> </Mydd_child>
+                            <div className="bg">
+                                <div className="indent_1">
 
+                                    <a href="">
+                                        <div className="indent_img">
+                                            <img src="http://img62.ddimg.cn/upload_img/00626/sxt03/LOGO-1530603069.jpg" alt=""/>
+                                        </div>
+                                        得力文具超级品牌日满100减50
+                                        <Icon type="right" />
+
+                                    </a>
+                                </div>
+                                <div className="indent_1">
+
+                                    <a href="">
+                                        <div className="indent_img">
+                                            <img src="http://img61.ddimg.cn/upload_img/00705/yhj/wzl-jian-4.11.jpg" alt=""/>
+                                        </div>
+                                        悠悠夏日，读书正好，30万图书，每满100减40
+                                        <Icon type="right" />
+
+                                    </a>
+                                </div>
+                                <div className="indent_1">
+
+                                    <a href="">
+                                        <div className="indent_img">
+                                            <img src="http://img60.ddimg.cn/upload_img/00451/zr/161216-yundong-12.jpg" alt=""/>
+                                        </div>
+                                        探路者童装清仓，每满100减50
+                                        <Icon type="right" />
+
+                                    </a>
+                                </div>
+                                <div className="indent_1">
+
+                                    <a href="">
+                                        <div className="indent_img">
+                                            <img src="http://img61.ddimg.cn/upload_img/00705/yhj/wzl-jian-4.11.jpg" alt=""/>
+                                        </div>
+                                        暑假阅读，中小学辅导，满99减50
+                                        <Icon type="right" />
+
+                                    </a>
+                                </div>
+                                <div className="indent_1">
+
+                                    <a href="">
+                                        <div className="indent_img">
+                                            <img src="http://img60.ddimg.cn/upload_img/00451/zr/161216-yundong-12.jpg" alt=""/>
+                                        </div>
+                                        欧莱雅清凉一夏，限时抢仍有折上折
+                                        <Icon type="right" />
+
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div className="indent_1">
+                                <a href="">
+                                    <div className="indent_img">
+                                        <img src="http://img60.ddimg.cn/upload_img/00487/11111/wd-012-07.png" alt=""/>
+                                    </div>
+                                    客服反馈
+                                    <Icon type="right" />
+                                </a>
+                            </div>
+
+                            <div className="indent_1" style={{height:"1rem"}}>
+                                <a href="">
+                                    <div className="indent_img">
+                                        <img src="http://img62.ddimg.cn/upload_img/00626/sxt03/LOGO-1530603069.jpg" alt=""/>
+                                    </div>
+                                    得力文具超级品牌日满100减50
+                                    <Icon type="right" />
+
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </main>
