@@ -1,6 +1,6 @@
 module.exports = {
     //=>WEB服务端口号
-    PORT: 8000,
+    PORT: 8003,
 
     //=>CROS跨域相关信息
     CROS: {
