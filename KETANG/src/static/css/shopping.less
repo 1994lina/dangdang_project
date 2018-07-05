@@ -1,8 +1,10 @@
 .ant-col-10{
   width: 100%;
 }
+p{margin-bottom: 0}
 .shop_main{
   padding: .2rem;
+  background: #fff;
 }
 .shop_title{
   position: relative;
@@ -43,6 +45,15 @@
     position: absolute;
     top:.22rem;
     right: 0rem;
+    font-size: .3rem;
+    .accounts{
+      padding:.15rem .25rem;
+      background-color:red;
+      color:#fff;
+      margin-left: .2rem;
+      font-size: .33rem;
+      border-radius: .1rem;
+    }
   }
 }
 .shop_ul{
@@ -51,12 +62,71 @@
     flex-wrap: nowrap;
     align-items:center;
     border-bottom: .01rem solid #ddd;
-    margin-top: .1rem;
-    .shop_img{display:inline-block}
     padding: .2rem 0;
+    margin-top: .1rem;
+    &:nth-last-child(1){
+      border-bottom: none;
+    }
+    .shop_price{
+      p{
+        margin-bottom: .2rem;
+      }
+    }
   }
 }
 .anticon-edit{
   margin-top: .12rem;
   float:right
+}
+.shop_centre{
+  width: 100%;
+  margin: .3rem 0;
+  font-size: .3rem;
+  display: flex;
+  justify-content: center;
+  .anticon-check-circle{
+    color: #ff2832;
+    font-size:.4rem ;
+    margin-right: .1rem;
+  }
+}
+
+.shop_footer{
+  width: 100%;
+  background: #fff;
+  margin-bottom: 1.3rem;
+  .footer_ul{
+    background:#f2f2f2;
+    width: 100%;
+    .footer_li{
+      background: #fff;
+      display: inline-block;
+      width: 3.72rem;
+      padding: .2rem .05rem;
+      margin-right: .05rem;
+      margin-bottom: .05rem;
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+      .footer_list{
+        margin-bottom: .1rem;
+        img{
+          width: 100%;
+          margin-bottom: .1rem;
+        }
+        p{
+          width: 100%;
+          line-height: .35rem;
+          height:.7rem;
+          overflow: hidden;
+        }
+      }
+      .footer_price{
+        margin-left: .1rem;
+        p{
+          line-height: .5rem;
+        }
+      }
+    }
+  }
 }

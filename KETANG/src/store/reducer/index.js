@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
+import list from './list'
 
-
-let reducer =function () {
-
-};
+let reducer =combineReducers({
+    list
+});
 export default reducer;

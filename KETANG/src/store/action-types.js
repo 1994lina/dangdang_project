@@ -1,0 +1,1 @@
+export const COURSE_QUERY_LIST='COURSE_QUERY_LIST';
