@@ -82,7 +82,7 @@ class Home extends Component {
 
 
                     <a href="javascript:;" className="ddkx_more">更多</a>
-                    <div className="style503"></div>
+                   
                 </div>
 
 
@@ -110,7 +110,7 @@ class Home extends Component {
                             </Carousel>) : ''}
                         </ul>
                     </div>
-                    <div className="style503"></div>
+                    
                 </div>
 
 

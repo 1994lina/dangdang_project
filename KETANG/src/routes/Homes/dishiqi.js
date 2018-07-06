@@ -227,7 +227,7 @@ class Dishiqi extends Component {
 
             </div>
 
-            <div className="style503"></div>
+            
         </div>;
     }
 
