@@ -21,6 +21,9 @@ import Home from "./routes/Home";
 import Classify from "./routes/Classify";
 import Shopping from "./routes/Shopping";
 import Mydangdang from "./routes/Mydangdang";
+import Login from "./routes/Login";
+import Register from './routes/Register'
+import Details from './routes/Details'
 
 
 /*RENDER*/
@@ -33,6 +36,9 @@ render(<Provider store={store}>
                     <Route path='/classify' component={Classify}/>
                     <Route path='/shopping' component={Shopping}/>
                     <Route path='/mydangdang' component={Mydangdang}/>
+                    <Route path='/register' component={Register}/>
+                    <Route path='/login' component={Login}/>
+                    <Route path='/details' component={Details}/>
                     <Redirect to='/home'/>
                 </Switch>
                 <NavBottom/>

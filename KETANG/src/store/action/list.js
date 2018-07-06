@@ -1,5 +1,5 @@
 import * as TYPES from '../action-types';
-import {queryList} from '../../api/course'
+import {queryList,queryShopCart} from '../../api/course'
 let list={
     queryList(payload = {}) {
         let {limit = 10, page = 1} = payload;
@@ -14,5 +14,20 @@ let list={
             });
         }
     },
+    queryUnpay() {
+        return async dispatch => {
+            let result = await queryShopCart(0);
+            dispatch({
+                type: TYPES.COURSE_UNPAY,
+                result
+            });
+        }
+    },
+    handleSelect(mode){
+        return{
+            type:TYPES.COURSE_HANDLE,
+            mode
+        }
+    }
 };
 export default list;
