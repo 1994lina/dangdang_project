@@ -1,6 +1,9 @@
+import list from './list';
+
 import Home from './Home';
 
 let action = {
-    Home
+    Home,
+    list
 };
 export default action;

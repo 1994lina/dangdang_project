@@ -66,17 +66,9 @@ route.get('/info', (req, res) => {
 
 route.get('/list', (req, res) => {
     //=>接收客户端传递的参数值，不传的给默认值：limit每页展示条数，page是第几页，type是筛选的类型
-    let {limit = 10, page = 1, type = 'all'} = req.query;
+    let {limit = 10, page = 1} = req.query;
     limit = parseFloat(limit);
     page = parseFloat(page);
-
-    //=>筛选：先按照传递的类型把数据筛选一轮（ALL是所有不用筛选）
-    if (type !== 'all') {
-        req.courseDATA = req.courseDATA.filter(item => {
-            return item.type === type;
-        });
-    }
-
     //=>分页处理：就是在所有筛选出来的数据中，找到某一页的那几条数据，然后就把这几条返回给客户端即可
     let total = Math.ceil(req.courseDATA.length / limit),//=>总页数
         result = [];

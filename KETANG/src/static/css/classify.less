@@ -1,3 +1,8 @@
+.ant-tabs-content{
+  background: #eff4fa;
+  height:100%;
+  padding-left:10px !important;
+}
 .headerNavBox {
   @BG: #2A2A2A;
   position: fixed;
@@ -8,34 +13,78 @@
   height: 0.8rem;
   line-height: 0.8rem;
   background: #fff;
-  color: #FFF;
-  .homeBox {
-    height: 100%;
-    .baseBox{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+  border-bottom:1px solid #ccc;
+  .classWrapper{
+    height:100%;
+    display:flex;
+    align-items: center;
+    .icon{
+      color:#666;
+      flex:0 0 40px;
+    }
+    div{
+      flex:1
+    }
+  }
+}
+.allBox{
+  width: 100%;
+  position:relative;
+  .ant-tabs-nav-wrap{
+    width:80px;
+  }
+}
+// tabCarder
+.tabCarder{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  margin-top:10px;
+  & > div {
+    flex:1;
+    height:100px;
+    padding:5px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background:#fff;
+    &:nth-child(1){
+      margin-right:10px;
+    }
+    p{
+      margin-bottom:0;
+    }
+    div{
+      margin-right:10px;
+    }
+  }
+}
+// 轮播图
+.carousel{
+  width:100%;
+  div{
+    height:100px;
+    width:100%;
+  }
+  img{
+    width:100%;
+    height:100%;
+  }
+}
+// bookWrapper
+.bookWrapper{
+  padding:10px;
+  background:#fff;
+  margin-top:10px;
+  .bookDetail{
+    display: flex;
+    div{
+      width:33.333333%;
+      display:flex;
+      flex-direction: column;
       align-items: center;
-      padding: 0 .2rem;
-      height: 100%;
-      font-size: .4rem;
-      .logo {
-        width:.6rem;
-        height: .5rem;
-        font-size: 0;
-        background: url("../images/logo.png") no-repeat;
-        background-size: 100% 100%;
-      }
-      div{
-        color: #2A2A2A;
-      }
-      .icon {
-        color: #2A2A2A;
-      }
-      .inputBox{
-        background: #e8ecf0 !important;
-        width: 5.2rem;
-        border-radius: .3rem;
+      img{
+        width:100%;
       }
     }
   }

@@ -59,10 +59,11 @@ import {Icon} from 'antd';
                      <Icon type="right"/>
                  </a>
              </div>
+
          </div>
      }
 
 
-     
+
  }
  export  default  connect()( Mydd_child )

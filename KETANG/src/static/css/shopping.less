@@ -1,8 +1,10 @@
 .ant-col-10{
   width: 100%;
 }
+p{margin-bottom: 0}
 .shop_main{
   padding: .2rem;
+  background: #fff;
 }
 .shop_title{
   position: relative;
@@ -43,6 +45,15 @@
     position: absolute;
     top:.22rem;
     right: 0rem;
+    font-size: .3rem;
+    .accounts{
+      padding:.15rem .25rem;
+      background-color:red;
+      color:#fff;
+      margin-left: .2rem;
+      font-size: .33rem;
+      border-radius: .1rem;
+    }
   }
 }
 .shop_ul{
@@ -50,13 +61,39 @@
     display:flex;
     flex-wrap: nowrap;
     align-items:center;
-    border-bottom: .01rem solid #ddd;
-    margin-top: .1rem;
-    .shop_img{display:inline-block}
-    padding: .2rem 0;
+    a{
+      display:flex;
+      flex-wrap: nowrap;
+      align-items:center;
+      color: #4e4e4e;
+      border-bottom: .01rem solid #ddd;
+      padding: .2rem 0;
+      margin-top: .1rem;
+      &:nth-last-child(1){
+        border-bottom: none;
+      }
+      .shop_price{
+        p{
+          margin-bottom: .2rem;
+        }
+      }
+    }
   }
 }
 .anticon-edit{
   margin-top: .12rem;
   float:right
 }
+.shop_centre{
+  width: 100%;
+  margin: .3rem 0;
+  font-size: .3rem;
+  display: flex;
+  justify-content: center;
+  .anticon-check-circle{
+    color: #ff2832;
+    font-size:.4rem ;
+    margin-right: .1rem;
+  }
+}
+
