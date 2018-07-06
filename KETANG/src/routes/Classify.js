@@ -4,14 +4,23 @@ import {Icon,Input,Tabs} from 'antd'
 import '../static/css/classify.less'
 import Swiper from '../component/Swiper'
 import TabCarder from "../component/TabCarder";
+import {queryBanner} from "../api/course";
+import BookShow from "../component/BookShow";
 
 const TabPane = Tabs.TabPane;
 class Classify extends React.Component {
     constructor(props, context) {
         super(props, context);
+        this.state = {
+            dataImg:[]
+        }
 
     }
-
+    componentDidMount(){
+        queryBanner().then(data=>{
+            this.setState({dataImg:data})
+        })
+    }
     render() {
         return <div>
             <div className="headerNavBox">
@@ -28,8 +37,9 @@ class Classify extends React.Component {
                     style={{ height: "100%" }}
                 >
                     <TabPane tab="图书" key="1">
-                        <Swiper/>
+                        <Swiper dataImg = {this.state.dataImg}/>
                         <TabCarder/>
+                        <BookShow/>
                     </TabPane>
                     <TabPane tab="童书" key="2">Content of Tab 2</TabPane>
                     <TabPane tab="电子书" key="3">Content of Tab 3</TabPane>
