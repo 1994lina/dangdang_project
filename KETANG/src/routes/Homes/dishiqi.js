@@ -217,7 +217,7 @@ class Dishiqi extends Component {
                         </li>
                     </ReactSwipe>
                 </ul>
-                <ul className="style513">
+                <ul className="style513 sty222">
                     <li>
                         <a href="javascript">
                             <img alt="" src="http://img59.ddimg.cn/14540040029369_y.jpg" />

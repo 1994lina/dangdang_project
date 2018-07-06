@@ -163,7 +163,7 @@ class Quality extends Component {
                         </ul>
                     </div>
                 </section>
-            </section>;
+            </section>
     
     
     
@@ -334,9 +334,11 @@ class Quality extends Component {
                         </ul>
                     </div>
                 </section>
-                <section className="style503"></section>
+                
             </section>
+            
         </div>
+        
 
 
 
