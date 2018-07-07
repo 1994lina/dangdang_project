@@ -39,6 +39,7 @@ render(<Provider store={store}>
                     <Route path='/register' component={Register}/>
                     <Route path='/login' component={Login}/>
                     <Route path='/details' component={Details}/>
+                    <Route path='/details/:id' component={Details}/>
                     <Redirect to='/home'/>
                 </Switch>
                 <NavBottom/>

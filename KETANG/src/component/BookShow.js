@@ -2,27 +2,35 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 class BookShow extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
+        this.state = {
+            list:[]
+        }
     }
     componentDidMount(){
-        console.log(this.props.bookList.data);
     }
     componentWillReceiveProps(nextProps){
-        console.log(nextProps,444);
+
     }
     render(){
         return(
             <div className="bookWrapper">
-                <p>榜单</p>
+                <div className="bookTitle">
+                    <span>{this.props.title}</span>
+                    <span>{this.props.subTitle ? this.props.subTitle + " >" : ""}</span>
+                </div>
                 <div className="bookDetail">
                     {
-                        this.props.bookList.data && this.props.bookList.data.slice(0,3).map((item,index)=>(
-                            <NavLink to="/">
-                                <div>
-                                    <img src={item.pic} alt="" style={{"width":"80%","height":"100px"}}/>
+                        this.props.bookList.length && this.props.bookList.slice(0,this.props.size).map((item,index)=>(
+
+                                <div key={index}>
+                                    <NavLink to={"/details/"+item.id} style={{"textAlign":"center"}}>
+                                        <img src={item.pic} alt="" style={{"height":"100px"}}/>
+                                    </NavLink>
                                     <span>{item.name.slice(0,3)}</span>
+
                                 </div>
-                            </NavLink>
+
                         ))
                     }
                 </div>

@@ -8,14 +8,15 @@ class Swipe extends React.Component {
         super(props,context);
     }
     componentDidMount(){
-        console.log(this.props);
     }
-
+    componentWillReceiveProps(nextProps){
+    }
     render() {
+        let dataImg = this.props.dataImg;
         return (
             <Carousel autoplay>
                 {
-                    this.props.dataImg.data && this.props.dataImg.data.map((item,index)=>(
+                    dataImg && dataImg.map((item,index)=>(
                         <div key={index}>
                             <img className="cate_banner_img"
                                  src={item.pic} alt="" style={{"width":"100%","height":"125px"}}/>
