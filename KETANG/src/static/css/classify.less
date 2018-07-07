@@ -2,6 +2,7 @@
   background: #eff4fa;
   height:100%;
   padding-left:10px !important;
+  overflow-y:auto !important;
 }
 .headerNavBox {
   @BG: #2A2A2A;
@@ -27,12 +28,20 @@
     }
   }
 }
-.allBox{
+.allBox.mainContent{
   width: 100%;
-  position:relative;
+  position:fixed;
   .ant-tabs-nav-wrap{
     width:80px;
   }
+  .ant-carousel{
+    .slick-slide{
+      margin-top:0;
+    }
+  }
+}
+.ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar{
+  background:#fff;
 }
 // tabCarder
 .tabCarder{
@@ -48,8 +57,8 @@
     justify-content: space-between;
     align-items:center;
     background:#fff;
-    &:nth-child(1){
-      margin-right:10px;
+    &:nth-child(2){
+      margin-left:10px;
     }
     p{
       margin-bottom:0;
@@ -76,15 +85,25 @@
   padding:10px;
   background:#fff;
   margin-top:10px;
+  .bookTitle{
+    font-size:14px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+    color:#969696;
+  }
   .bookDetail{
     display: flex;
+    flex-wrap:wrap;
     div{
       width:33.333333%;
       display:flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom:6px;
       img{
-        width:100%;
+        width:80%;
       }
     }
   }

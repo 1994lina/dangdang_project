@@ -1,27 +1,38 @@
 import React from 'react'
-
+import {NavLink} from 'react-router-dom'
 class BookShow extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props);
+        this.state = {
+            list:[]
+        }
     }
+    componentDidMount(){
+    }
+    componentWillReceiveProps(nextProps){
 
+    }
     render(){
         return(
             <div className="bookWrapper">
-                <p>榜单</p>
+                <div className="bookTitle">
+                    <span>{this.props.title}</span>
+                    <span>{this.props.subTitle ? this.props.subTitle + " >" : ""}</span>
+                </div>
                 <div className="bookDetail">
-                    <div>
-                        <img src="http://img60.ddimg.cn/upload_img/00705/yhj/1-tuscxb-6.15.png" alt=""/>
-                        <span>总榜</span>
-                    </div>
-                    <div>
-                        <img src="http://img63.ddimg.cn/upload_img/00705/J/6.22-1529573781.png" alt=""/>
-                        <span>新书榜</span>
-                    </div>
-                    <div>
-                        <img src="http://img62.ddimg.cn/upload_img/00705/yhj/3-tongscxb.png" alt=""/>
-                        <span>童书榜</span>
-                    </div>
+                    {
+                        this.props.bookList.length && this.props.bookList.slice(0,this.props.size).map((item,index)=>(
+
+                                <div key={index}>
+                                    <NavLink to={"/details/"+item.id} style={{"textAlign":"center"}}>
+                                        <img src={item.pic} alt="" style={{"height":"100px"}}/>
+                                    </NavLink>
+                                    <span>{item.name.slice(0,3)}</span>
+
+                                </div>
+
+                        ))
+                    }
                 </div>
             </div>
         )

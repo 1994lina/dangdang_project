@@ -43,7 +43,10 @@ class List extends Component{
                                 {
                                     data.map((item,index)=>{
                                         return <li className='footer_li' key={index}>
-                                            <Link to='details'>
+                                            <Link to={{
+                                                pathname: '/shopping/details',
+                                                search: `?courseId=${item.id}`
+                                            }}>
                                             <div className='footer_list'>
                                                 <img src={item.pic} alt=""/>
                                                 <p>{item.name}</p>
@@ -57,7 +60,7 @@ class List extends Component{
                                 }
                             </ul>
                             {courseData.total <= courseData.page ? '' :
-                                <div style={{width:'100%'}}><Button type="dashed" loading={this.state.isLoading} onClick={this.loadMore} >点击加载更多数据！</Button></div>}
+                                <div style={{width:'100%'}}><Button type="dashed" loading={this.state.isLoading}  >点击加载更多数据！</Button></div>}
                         </div>) : <Alert
                         message="Warning"
                         description="暂时没有数据，请稍后再来"
