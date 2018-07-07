@@ -1,7 +1,7 @@
 .ant-tabs-content{
   background: #eff4fa;
   height:100%;
-  padding-left:10px !important;
+  padding-left:0.1rem !important;
   overflow-y:auto !important;
 }
 .headerNavBox {
@@ -21,7 +21,7 @@
     align-items: center;
     .icon{
       color:#666;
-      flex:0 0 40px;
+      flex:0 0 0.4rem;
     }
     div{
       flex:1
@@ -43,28 +43,41 @@
 .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar{
   background:#fff;
 }
+.ant-tabs-vertical > .ant-tabs-bar .ant-tabs-tab{
+  margin-bottom:0.08rem;
+  padding:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:30px;
+}
 // tabCarder
 .tabCarder{
   width:100%;
   display:flex;
   justify-content: space-between;
-  margin-top:10px;
+  margin-top:0.1rem;
   & > div {
     flex:1;
-    height:100px;
-    padding:5px;
+    height:1rem;
+    padding:0.1rem;
     display:flex;
     justify-content: space-between;
     align-items:center;
     background:#fff;
     &:nth-child(2){
-      margin-left:10px;
+      margin-left:0.1rem;
     }
-    p{
-      margin-bottom:0;
+    p:nth-child(1){
+      margin-bottom:0.08rem;
+      font-size:0.16rem;
+    }
+    p:nth-child(2){
+      font-size:0.12rem;
+      color:#a6a6a6;
     }
     div{
-      margin-right:10px;
+      margin-right:0.1rem;
     }
   }
 }
@@ -72,7 +85,7 @@
 .carousel{
   width:100%;
   div{
-    height:100px;
+    height:1rem;
     width:100%;
   }
   img{
@@ -82,15 +95,15 @@
 }
 // bookWrapper
 .bookWrapper{
-  padding:10px;
+  padding:0.1rem;
   background:#fff;
-  margin-top:10px;
+  margin-top:0.1rem;
   .bookTitle{
-    font-size:14px;
+    font-size:0.14rem;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:10px;
+    margin-bottom:0.1rem;
     color:#969696;
   }
   .bookDetail{

@@ -3,6 +3,7 @@ import * as TYPES from '../action-types';
 let INIT_STATE = {
     banner: [],
     list: [],
+    listname:[]
 };
 export default function course(state = INIT_STATE, action) {
     state = JSON.parse(JSON.stringify(state));
@@ -19,6 +20,12 @@ export default function course(state = INIT_STATE, action) {
 
             if (parseFloat(code3) === 0) {
                 state.list = bookList;
+            }
+            break;
+        case TYPES.CLASSIFY_QUERY_LISTNAME:
+            let {code:nCode,data:listname} = action.listname;
+            if (parseFloat(nCode) === 0) {
+                state.listname = listname;
             }
             break;
 

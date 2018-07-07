@@ -24,7 +24,10 @@ class BookShow extends React.Component{
                         this.props.bookList.length && this.props.bookList.slice(0,this.props.size).map((item,index)=>(
 
                                 <div key={index}>
-                                    <NavLink to={"/details/"+item.id} style={{"textAlign":"center"}}>
+                                    <NavLink to={{
+                                        pathname: '/shopping/details',
+                                        search: `?courseId=${item.id}`
+                                    }} style={{"textAlign":"center"}}>
                                         <img src={item.pic} alt="" style={{"height":"100px"}}/>
                                     </NavLink>
                                     <span>{item.name.slice(0,3)}</span>

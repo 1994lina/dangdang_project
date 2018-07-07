@@ -32,6 +32,8 @@ class Classify extends React.Component {
         //     this.setState({bookList:data})
         // })
         this.props.queryList();
+        // 获取左侧列表
+        this.props.queryListName();
 
     }
     render() {
@@ -49,68 +51,96 @@ class Classify extends React.Component {
                     tabPosition="left"
                     style={{ height: "100%" }}
                 >
-                    <TabPane tab="图书" key="1">
-                        <Swiper dataImg = {this.props.banner}/>
-                        <div className="tabCarder">
-                            <div>
+                    {this.props.listname.map((item)=>(
+                        <TabPane tab={item.name} key={item.id}>
+                            <Swiper dataImg = {this.props.banner}/>
+                            <div className="tabCarder">
                                 <div>
-                                    <p>进入当当商城</p>
-                                    <p>低至2.9折</p>
+                                    <div>
+                                        <p>进入当当商城</p>
+                                        <p>低至2.9折</p>
+                                    </div>
+                                    <Icon type="right"/>
                                 </div>
-                                <Icon type="right"/>
+                                {item.id % 2 ==0 ? (
+                                    <div>
+                                        <div>
+                                            <p>进入当当商城</p>
+                                            <p>低至2.9折</p>
+                                        </div>
+                                        <Icon type="right"/>
+                                    </div>
+                                ):''}
                             </div>
-                            <div>
-                                <div>
-                                    <p>进入当当商城</p>
-                                    <p>低至2.9折</p>
-                                </div>
-                                <Icon type="right"/>
-                            </div>
-                        </div>
-                        <BookShow bookList = {this.props.list} title="榜单" size="3"/>
-                        <BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>
-                        <BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>
-                        <BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>
-                    </TabPane>
-                    <TabPane tab="童书" key="2">
-                        <Swiper dataImg = {this.props.banner}/>
-                        <div className="tabCarder">
-                            <div>
-                                <div>
-                                    <p>进入当当商城</p>
-                                    <p>低至2.9折</p>
-                                </div>
-                                <Icon type="right"/>
-                            </div>
-                        </div>
-                        <BookShow bookList = {this.props.list} title="榜单" size="3"/>
-                        <BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>
-                        <BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>
-                        <BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>
-                    </TabPane>
-                    <TabPane tab="电子书" key="3">
-                        Swiper dataImg = {this.props.banner}/>
-                        <div className="tabCarder">
-                            <div>
-                                <div>
-                                    <p>进入当当商城</p>
-                                    <p>低至2.9折</p>
-                                </div>
-                                <Icon type="right"/>
-                            </div>
-                            <div>
-                                <div>
-                                    <p>进入当当商城</p>
-                                    <p>低至2.9折</p>
-                                </div>
-                                <Icon type="right"/>
-                            </div>
-                        </div>
-                        <BookShow bookList = {this.props.list} title="榜单" size="3"/>
-                        <BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>
-                        <BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>
-                        <BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>
-                    </TabPane>
+                            <BookShow bookList = {this.props.list} title="榜单" size="3"/>
+                            <BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>
+                            <BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>
+                            <BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>
+                        </TabPane>
+                    ))}
+
+                    {/*<TabPane tab="图书" key="1">*/}
+                        {/*<Swiper dataImg = {this.props.banner}/>*/}
+                        {/*<div className="tabCarder">*/}
+                            {/*<div>*/}
+                                {/*<div>*/}
+                                    {/*<p>进入当当商城</p>*/}
+                                    {/*<p>低至2.9折</p>*/}
+                                {/*</div>*/}
+                                {/*<Icon type="right"/>*/}
+                            {/*</div>*/}
+                            {/*<div>*/}
+                                {/*<div>*/}
+                                    {/*<p>进入当当商城</p>*/}
+                                    {/*<p>低至2.9折</p>*/}
+                                {/*</div>*/}
+                                {/*<Icon type="right"/>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                        {/*<BookShow bookList = {this.props.list} title="榜单" size="3"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>*/}
+                    {/*</TabPane>*/}
+                    {/*<TabPane tab="童书" key="2">*/}
+                        {/*<Swiper dataImg = {this.props.banner}/>*/}
+                        {/*<div className="tabCarder">*/}
+                            {/*<div>*/}
+                                {/*<div>*/}
+                                    {/*<p>进入当当商城</p>*/}
+                                    {/*<p>低至2.9折</p>*/}
+                                {/*</div>*/}
+                                {/*<Icon type="right"/>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                        {/*<BookShow bookList = {this.props.list} title="榜单" size="3"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>*/}
+                    {/*</TabPane>*/}
+                    {/*<TabPane tab="电子书" key="3">*/}
+                        {/*<Swiper dataImg = {this.props.banner}/>*/}
+                        {/*<div className="tabCarder">*/}
+                            {/*<div>*/}
+                                {/*<div>*/}
+                                    {/*<p>进入当当商城</p>*/}
+                                    {/*<p>低至2.9折</p>*/}
+                                {/*</div>*/}
+                                {/*<Icon type="right"/>*/}
+                            {/*</div>*/}
+                            {/*<div>*/}
+                                {/*<div>*/}
+                                    {/*<p>进入当当商城</p>*/}
+                                    {/*<p>低至2.9折</p>*/}
+                                {/*</div>*/}
+                                {/*<Icon type="right"/>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                        {/*<BookShow bookList = {this.props.list} title="榜单" size="3"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>*/}
+                        {/*<BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>*/}
+                    {/*</TabPane>*/}
                 </Tabs>
             </main>
         </div>
