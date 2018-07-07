@@ -19,11 +19,10 @@ import './static/css/common.less';
 import NavBottom from './component/NavBottom'
 import Home from "./routes/Home";
 import Classify from "./routes/Classify";
-import Shopping from "./routes/Shopping";
+import Shopping_one from "./routes/Shopping_one";
 import Mydangdang from "./routes/Mydangdang";
 import Login from "./routes/Login";
 import Register from './routes/Register'
-import Details from './routes/Details'
 
 
 /*RENDER*/
@@ -34,11 +33,10 @@ render(<Provider store={store}>
                 <Switch>
                     <Route path='/home' component={Home}/>
                     <Route path='/classify' component={Classify}/>
-                    <Route path='/shopping' component={Shopping}/>
+                    <Route path='/shopping' component={Shopping_one}/>
                     <Route path='/mydangdang' component={Mydangdang}/>
                     <Route path='/register' component={Register}/>
                     <Route path='/login' component={Login}/>
-                    <Route path='/details' component={Details}/>
                     <Redirect to='/home'/>
                 </Switch>
                 <NavBottom/>

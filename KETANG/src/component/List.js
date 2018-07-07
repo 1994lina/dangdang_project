@@ -43,7 +43,10 @@ class List extends Component{
                                 {
                                     data.map((item,index)=>{
                                         return <li className='footer_li' key={index}>
-                                            <Link to='details'>
+                                            <Link to={{
+                                                pathname: '/shopping/details',
+                                                search: `?courseId=${item.id}`
+                                            }}>
                                             <div className='footer_list'>
                                                 <img src={item.pic} alt=""/>
                                                 <p>{item.name}</p>

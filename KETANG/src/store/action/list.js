@@ -14,6 +14,12 @@ let list={
             });
         }
     },
+    handleSelect(mode){
+        return{
+            type:TYPES.COURSE_HANDLE,
+            mode
+        }
+    },
     queryUnpay() {
         return async dispatch => {
             let result = await queryShopCart(0);
@@ -23,11 +29,5 @@ let list={
             });
         }
     },
-    handleSelect(mode){
-        return{
-            type:TYPES.COURSE_HANDLE,
-            mode
-        }
-    }
 };
 export default list;
