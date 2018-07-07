@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import {Link} from 'react-router-dom'
 import { Icon, Input, Carousel, BackTop } from 'antd';
 import '../static/css/home.less'
 import action from '../store/action/index'
@@ -59,11 +60,11 @@ class Home extends Component {
 
                 <div className="ify">
                     <ul>
-                        <li><a href="javascript:;"><img src="http://img62.ddimg.cn/upload_img/00528/0000/1-00-1528978871.png" alt="" /></a></li>
-                        <li><a href="javascript:;"><img src="http://img62.ddimg.cn/upload_img/00528/0000/2-00-1528978871.png" alt="" /></a></li>
-                        <li><a href="javascript:;"><img src="http://img60.ddimg.cn/upload_img/00528/0000/3-00-1528978871.png" alt="" /></a></li>
-                        <li><a href="javascript:;"><img src="http://img60.ddimg.cn/upload_img/00528/0000/4-00-1528978871.png" alt="" /></a></li>
-                        <li><a href="javascript:;"><img src="http://img62.ddimg.cn/upload_img/00528/0000/000-1530273800.png" alt="" /></a></li>
+                        <li><Link to='/classify'><img src="http://img62.ddimg.cn/upload_img/00528/0000/1-00-1528978871.png" alt="" /></Link></li>
+                        <li><Link to='/classify'><img src="http://img62.ddimg.cn/upload_img/00528/0000/2-00-1528978871.png" alt="" /></Link></li>
+                        <li><Link to='/classify'><img src="http://img60.ddimg.cn/upload_img/00528/0000/3-00-1528978871.png" alt="" /></Link></li>
+                        <li><Link to='/mydangdang'><img src="http://img60.ddimg.cn/upload_img/00528/0000/4-00-1528978871.png" alt="" /></Link></li>
+                        <li><Link to='/classify'><img src="http://img62.ddimg.cn/upload_img/00528/0000/000-1530273800.png" alt="" /></Link></li>
                     </ul>
                 </div>
                 <div className='journalism'>
