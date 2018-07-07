@@ -1,10 +1,9 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {Icon,Input,Tabs} from 'antd'
 import '../static/css/classify.less'
 import Swiper from '../component/Swiper'
-import TabCarder from "../component/TabCarder";
-import {queryBanner,queryList} from "../api/course";
 import BookShow from "../component/BookShow";
 import action from "../store/action";
 
@@ -36,11 +35,14 @@ class Classify extends React.Component {
         this.props.queryListName();
 
     }
+    back = () => {
+        this.props.history.goBack();
+    }
     render() {
         return <div>
             <div className="headerNavBox">
                 <div className="classWrapper">
-                    <Icon type="left" style={{"marginLeft":"10px"}} className="icon"/>
+                    <Icon type="left" style={{"marginLeft":"10px"}} className="icon" onClick={this.back}/>
                      <Input  placeholder="搜索商品/店铺/种类" prefix={<Icon type='search'/>}  className='inputBox' />
                     <Icon type="ellipsis" className="icon"/>
                 </div>
@@ -78,69 +80,6 @@ class Classify extends React.Component {
                             <BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>
                         </TabPane>
                     ))}
-
-                    {/*<TabPane tab="图书" key="1">*/}
-                        {/*<Swiper dataImg = {this.props.banner}/>*/}
-                        {/*<div className="tabCarder">*/}
-                            {/*<div>*/}
-                                {/*<div>*/}
-                                    {/*<p>进入当当商城</p>*/}
-                                    {/*<p>低至2.9折</p>*/}
-                                {/*</div>*/}
-                                {/*<Icon type="right"/>*/}
-                            {/*</div>*/}
-                            {/*<div>*/}
-                                {/*<div>*/}
-                                    {/*<p>进入当当商城</p>*/}
-                                    {/*<p>低至2.9折</p>*/}
-                                {/*</div>*/}
-                                {/*<Icon type="right"/>*/}
-                            {/*</div>*/}
-                        {/*</div>*/}
-                        {/*<BookShow bookList = {this.props.list} title="榜单" size="3"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>*/}
-                    {/*</TabPane>*/}
-                    {/*<TabPane tab="童书" key="2">*/}
-                        {/*<Swiper dataImg = {this.props.banner}/>*/}
-                        {/*<div className="tabCarder">*/}
-                            {/*<div>*/}
-                                {/*<div>*/}
-                                    {/*<p>进入当当商城</p>*/}
-                                    {/*<p>低至2.9折</p>*/}
-                                {/*</div>*/}
-                                {/*<Icon type="right"/>*/}
-                            {/*</div>*/}
-                        {/*</div>*/}
-                        {/*<BookShow bookList = {this.props.list} title="榜单" size="3"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>*/}
-                    {/*</TabPane>*/}
-                    {/*<TabPane tab="电子书" key="3">*/}
-                        {/*<Swiper dataImg = {this.props.banner}/>*/}
-                        {/*<div className="tabCarder">*/}
-                            {/*<div>*/}
-                                {/*<div>*/}
-                                    {/*<p>进入当当商城</p>*/}
-                                    {/*<p>低至2.9折</p>*/}
-                                {/*</div>*/}
-                                {/*<Icon type="right"/>*/}
-                            {/*</div>*/}
-                            {/*<div>*/}
-                                {/*<div>*/}
-                                    {/*<p>进入当当商城</p>*/}
-                                    {/*<p>低至2.9折</p>*/}
-                                {/*</div>*/}
-                                {/*<Icon type="right"/>*/}
-                            {/*</div>*/}
-                        {/*</div>*/}
-                        {/*<BookShow bookList = {this.props.list} title="榜单" size="3"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="中小学教辅" size="4" subTitle="畅销榜"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="小说" size="3" subTitle="畅销榜"/>*/}
-                        {/*<BookShow bookList = {this.props.list} title="文学" size="4" subTitle="畅销榜"/>*/}
-                    {/*</TabPane>*/}
                 </Tabs>
             </main>
         </div>
@@ -148,4 +87,4 @@ class Classify extends React.Component {
     }
 }
 
-export default connect(state => ({ ...state.Classify }), action.Classify)(Classify)
+export default withRouter(connect(state => ({ ...state.Classify }), action.Classify)(Classify))
