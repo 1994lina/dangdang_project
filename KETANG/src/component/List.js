@@ -60,7 +60,7 @@ class List extends Component{
                                 }
                             </ul>
                             {courseData.total <= courseData.page ? '' :
-                                <div style={{width:'100%'}}><Button type="dashed" loading={this.state.isLoading} onClick={this.loadMore} >点击加载更多数据！</Button></div>}
+                                <div style={{width:'100%'}}><Button type="dashed" loading={this.state.isLoading}  >点击加载更多数据！</Button></div>}
                         </div>) : <Alert
                         message="Warning"
                         description="暂时没有数据，请稍后再来"
