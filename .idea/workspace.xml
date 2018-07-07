@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="504030b5-3e59-4a8d-aa35-58e2734c47a5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/KETANG/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/component/BookShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/component/BookShow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/component/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/component/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/component/Swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/component/Swiper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/routes/Classify.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/routes/Classify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/static/css/classify.less" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/static/css/classify.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/store/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/store/action-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/store/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/store/action/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KETANG/src/store/reducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/KETANG/src/store/reducer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,8 +40,8 @@
       <file leaf-file-name="BookShow.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KETANG/src/component/BookShow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="254">
+              <caret line="26" column="101" lean-forward="true" selection-start-line="26" selection-start-column="101" selection-end-line="26" selection-end-column="101" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -334,25 +325,24 @@
       <option name="presentableId" value="Default" />
       <updated>1530800095851</updated>
       <workItem from="1530800097333" duration="2796000" />
-      <workItem from="1530929886359" duration="5737000" />
+      <workItem from="1530929886359" duration="5904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8533000" />
+    <option name="totallyTimeSpent" value="8700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27272728" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27272728" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -721,8 +711,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KETANG/src/component/BookShow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="254">
+          <caret line="26" column="101" lean-forward="true" selection-start-line="26" selection-start-column="101" selection-end-line="26" selection-end-column="101" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

@@ -2,10 +2,12 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {withRouter, NavLink} from 'react-router-dom';
 import {Icon} from 'antd';
+import action from "../store/action/index";
 
 class NavBottom extends React.Component {
     constructor(props, context) {
         super(props, context);
+        this.props.queryUnpay();
     }
 
     render() {
@@ -30,4 +32,4 @@ class NavBottom extends React.Component {
     }
 }
 
-export default withRouter(connect()(NavBottom));
+export default withRouter(connect(null, action.list)(NavBottom));

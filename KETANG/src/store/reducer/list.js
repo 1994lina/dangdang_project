@@ -32,7 +32,8 @@ export default function list(state = INIT_STATE, action) {
                 state.shopCart.unpay=action.result.data;
                 state.shopCart.unpay=state.shopCart.unpay.map(item=>{
                     return {...item,check:false}
-                })
+                });
+                state.selectAll = true;
             }
             break;
         case TYPES.COURSE_HANDLE:
